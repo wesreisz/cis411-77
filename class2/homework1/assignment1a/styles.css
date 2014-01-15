@@ -1,0 +1,27 @@
+body{
+  width: 800px;
+  border:1px solid black;
+  height: 800px;
+  padding: 50px;
+  margin: 25px;
+}
+.sidebar {
+  top: 170px;
+  margin-left: 588px;
+  position: absolute;
+  text-align: right;
+  font-family: "lucida grande", verdana, tahoma, arial;
+  width: 198px;
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  font-size: x-small;
+  width: 174px;
+}
+li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.content{
+	width: 700px;
+}

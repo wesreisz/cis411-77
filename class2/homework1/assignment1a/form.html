@@ -2,6 +2,54 @@
 <html>
 	<head>
 		<title>Homework 1</title>
+		<style>
+		input, textarea { 
+			padding: 9px;
+			border: solid 1px #E5E5E5;
+			outline: 0;
+			font: normal 13px/100% Verdana, Tahoma, sans-serif;
+			width: 200px;
+			background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+			background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+			box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+			-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+			-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+			}
+
+		textarea { 
+			width: 400px;
+			max-width: 400px;
+			height: 150px;
+			line-height: 150%;
+			}
+
+		input:hover, textarea:hover,
+		input:focus, textarea:focus { 
+			border-color: #C9C9C9; 
+			-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+			}
+		.form {
+			padding-left: 150px;
+		}	
+
+		.form label { 
+			margin-left: 10px; 
+			color: #999999; 
+			}
+
+		.submit input {
+			width: auto;
+			padding: 9px 15px;
+			background: #617798;
+			border: 0;
+			font-size: 14px;
+			color: #FFFFFF;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			}
+		
+	
+		</style>
 	</head>
 	<body>
 		<h3>Form</h3>
@@ -14,5 +62,54 @@
 			<li><a href="form.html">Form</a></li>
 			<li><a href="entities.html">Entities</a></li>	
 		</ul>
+		<form class="form">
+
+			<p class="name">
+				<input type="text" name="name" id="name" />
+				<label for="name">Name</label>
+			</p>
+
+			<p class="email">
+				<input type="text" name="email" id="email" />
+				<label for="email">E-mail</label>
+			</p>
+
+			<p class="web">
+				<input type="text" name="web" id="web" />
+				<label for="web">Website</label>
+			</p>
+
+			<p class="text">
+				<textarea name="text"></textarea>
+			</p>
+			
+			<p class="text">
+				<input type="radio" name="group2" value="Water"> Wine<br>
+				<input type="radio" name="group2" value="Beer"> Beer<br>
+				<input type="radio" name="group2" value="Wine" checked>Water
+			</p>
+			<p class="text">
+				<select>
+				  <option value="volvo">Volvo</option>
+				  <option value="saab">Saab</option>
+				  <option value="mercedes">Mercedes</option>
+				  <option value="audi">Audi</option>
+				</select>
+			</p>	
+
+			<p class="submit">
+				<input type="submit" value="Send" />
+			</p>
+
+		</form>
+		
+		
+			<table border=1 cellpadding="10" cellspacing="0">
+				<tr>
+					<td>external_styles.html
+					sform.html</td>
+					<td>Contains an example of a form element containing the following controls: text box, text area, check boxes, radio buttons, submit button, drop-down selection list.</td>
+				</tr>
+			</table>
 	</body>
 </html>
