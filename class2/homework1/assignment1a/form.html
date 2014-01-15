@@ -3,11 +3,13 @@
 	<head>
 		<title>Homework 1</title>
 		<style>
-		input, textarea { 
+		body{
+			font: normal 13px/100% Verdana, Tahoma, sans-serif;
+		}
+		input, textarea,select { 
 			padding: 9px;
 			border: solid 1px #E5E5E5;
 			outline: 0;
-			font: normal 13px/100% Verdana, Tahoma, sans-serif;
 			width: 200px;
 			background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
 			background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
@@ -15,7 +17,7 @@
 			-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 			-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
 			}
-
+			
 		textarea { 
 			width: 400px;
 			max-width: 400px;
@@ -84,17 +86,19 @@
 			</p>
 			
 			<p class="text">
-				<input type="radio" name="group2" value="Water"> Wine<br>
-				<input type="radio" name="group2" value="Beer"> Beer<br>
-				<input type="radio" name="group2" value="Wine" checked>Water
+				<div>I prefer to drink:</div>
+				<input type="radio" name="group2" value="Water" name="water"> <label for="name">Water</label><br>
+				<input type="radio" name="group2" value="Beer" name="beer"> <label for="beer">Beer</label><br>
+				<input type="radio" name="group2" value="Wine" checked name="wine"> <label for="name">Wine</label><br>
 			</p>
 			<p class="text">
-				<select>
+				<select name="idrive">
 				  <option value="volvo">Volvo</option>
 				  <option value="saab">Saab</option>
 				  <option value="mercedes">Mercedes</option>
 				  <option value="audi">Audi</option>
 				</select>
+				<label for="idrive">I drive: </label>
 			</p>	
 
 			<p class="submit">

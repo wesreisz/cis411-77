@@ -1,3 +1,54 @@
 body{
 	background: url(images/bck.jpg) no-repeat top left;
+	font-family: arial;
+	font-size: 9pt;
+}
+h1{
+	background: url(images/title2.jpg) no-repeat top left;
+	color: white;
+	height: 90px;
+	position: relative;
+	left: 100px;
+}
+h2{
+	display: none;
+}
+h3{
+	background:url(images/svirgolata.gif) no-repeat top left;
+	padding-left: 40px;
+	
+}
+.page-wrapper{
+	position: relative;
+	left: 140px;
+	background: url(images/bck2.jpg) no-repeat top left;
+}
+.preamble{
+	width: 400px;
+	position: relative;
+}
+.summary, .main, .supporting{
+	width: 400px;
+}
+.wrapper{
+	position: absolute;
+	left: 420px;
+	top: 100;
+	color: black;
+	text-align: right;
+	width: 200px;
+}
+a{
+	color: black;
+}
+ul li{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+li>a{
+	text-decoration:none;
+}
+li>a:hover{
+	font-weight: bold;
 }
