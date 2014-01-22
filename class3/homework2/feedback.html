@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<script src="scripts/calc.js"></script>
+<title>Calculator</title>
+</head>
+<body onload="calc.post(100);">
+	<div id="hdr">
+	 <img src="/homework2/images/header.png" alt="header image" />
+	 <div id="nav">
+	 	<a href="/homework2/index.html">Calculator</a>&nbsp;|&nbsp;
+	    <a href="/homework2/calculator.html">New Calculator</a>&nbsp;|&nbsp;
+	    <a href="/homework2/feedback.html">Feedback</a>&nbsp;|&nbsp;
+	    <a href="/homework2/registration.html">Registration</a>&nbsp;|&nbsp;
+	 	<a href="/homework2/faq.html">FAQ</a>
+	 </div>
+	</div>
+	<fieldset style="width:1000px">
+  
+  <div id="divMsg" style="background-color: #CC6699"></div>
+  <form>
+	<legend>Feedback Form</legend>
+    <div id="commentForm" style="width:1000px;">   
+    	<p>   
+            <label for="txtEmail">Email:</label>
+           <input type="text" id="txtEmail" name="txtEmail" style="width:250px"/>
+        </p>
+        <p>
+           <label for="txtEmail">Feedback:</label>
+           <textarea rows="20" cols="100" id="txtFeedback" name="txtFeedback"></textarea>
+        </p>
+        <input type="button" id="btnSubmit" name="btnSubmit" value="Submit" onclick="validateForm();"/>       
+     </div>
+  </form>
+
+
+</fieldset>
+<div id="ftr" style="width: 1000px; text-align: right;">
+ <img src="/homework2/images/btm.png" alt="footer image" />
+</div>
+</body>
+</html>
