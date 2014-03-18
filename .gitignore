@@ -167,5 +167,5 @@ $RECYCLE.BIN/
 [Dd]ebug
 [Rr]elease
 
-packages/*
-!packages/repositories.config
+*/packages/*
+!*/packages/repositories.config
