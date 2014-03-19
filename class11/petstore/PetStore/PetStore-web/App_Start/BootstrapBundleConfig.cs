@@ -1,8 +1,8 @@
 using System.Web.Optimization;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(PetStore_web.App_Start.BootstrapBundleConfig), "RegisterBundles")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(PetStore_web.BootstrapBundleConfig), "RegisterBundles")]
 
-namespace PetStore_web.App_Start
+namespace PetStore_web
 {
 	public class BootstrapBundleConfig
 	{

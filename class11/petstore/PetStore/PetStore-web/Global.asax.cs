@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace PetStore_web
@@ -12,6 +13,8 @@ namespace PetStore_web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            BootstrapBundleConfig.RegisterBundles();
+            BundleConfig.RegisterBundles(BundleTable.Bundles); 
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }

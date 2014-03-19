@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
@@ -13,10 +14,19 @@ namespace PetStore_web.Models
     {
         [Key]
         public int petId { get; set; }
+        [DisplayName("Animal")]
         public String name { get; set; }
+        [DisplayName("Description")]
         public String description { get; set; }
+        [NotMapped]
+        public String shortDescription {
+            get { return (description != null && description.Length > 50) ? description.Substring(0, 50) + "..." : description; } 
+        }
+        [DisplayName("Quantity")]
         public int quantity { get; set; }
+        [DisplayName("Price")]
         public Double price { get; set; }
+        [DisplayName("Received Date")]
         public DateTime lastUpdateDate { get; set; }
         public String smlPicture { get; set; }
         public String lrgPicture { get; set; }
