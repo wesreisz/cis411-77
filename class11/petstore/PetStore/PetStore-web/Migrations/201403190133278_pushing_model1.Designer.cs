@@ -7,13 +7,13 @@ namespace PetStore_web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class pushing_model : IMigrationMetadata
+    public sealed partial class pushing_model1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(pushing_model));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(pushing_model1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201403190017199_pushing_model"; }
+            get { return "201403190133278_pushing_model1"; }
         }
         
         string IMigrationMetadata.Source

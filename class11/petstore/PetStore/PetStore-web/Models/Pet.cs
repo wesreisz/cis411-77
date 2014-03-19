@@ -15,14 +15,28 @@ namespace PetStore_web.Models
         public int petId { get; set; }
         public String name { get; set; }
         public String description { get; set; }
-        public int quanity { get; set; }
-        public double price { get; set; }
+        public int quantity { get; set; }
+        public Double price { get; set; }
         public DateTime lastUpdateDate { get; set; }
         public String smlPicture { get; set; }
         public String lrgPicture { get; set; }
+
         public int personId { get; set; }
         [ForeignKey("personId")]
         public virtual Person person { get; set; }
+        
+        public Pet() { 
+        }
+        
+        public Pet(String name, String description, int quantity, Double price, String smlPicture, String lrgPicture, Person p) {
+            this.name = name;
+            this.description = description;
+            this.quantity = quantity;
+            this.price = price;
+            this.lastUpdateDate = DateTime.Now;
+            this.smlPicture = smlPicture;
+            this.personId = p.personId;
+        }
     }
 
     [Table("Person")]
@@ -34,7 +48,16 @@ namespace PetStore_web.Models
         public DateTime lastUpdateDate { get; set; }
         public String uid { get; set; }
         public String password { get; set; }
-
+        
+        public Person() { 
+        }
+        
+        public Person(String displayName, String uid, String pass) {
+            this.displayName = displayName;
+            this.uid = uid;
+            this.password = pass;
+            this.lastUpdateDate = DateTime.Now;
+        }
     }
 
     public class PetDBContext : DbContext

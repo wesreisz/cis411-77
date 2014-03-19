@@ -95,9 +95,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201403190017199_pushing_model.cs" />
-    <Compile Include="Migrations\201403190017199_pushing_model.Designer.cs">
-      <DependentUpon>201403190017199_pushing_model.cs</DependentUpon>
+    <Compile Include="Migrations\201403190128261_pushing_model.cs" />
+    <Compile Include="Migrations\201403190128261_pushing_model.Designer.cs">
+      <DependentUpon>201403190128261_pushing_model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201403190133278_pushing_model1.cs" />
+    <Compile Include="Migrations\201403190133278_pushing_model1.Designer.cs">
+      <DependentUpon>201403190133278_pushing_model1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Pet.cs" />
@@ -121,8 +125,11 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201403190017199_pushing_model.resx">
-      <DependentUpon>201403190017199_pushing_model.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201403190128261_pushing_model.resx">
+      <DependentUpon>201403190128261_pushing_model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201403190133278_pushing_model1.resx">
+      <DependentUpon>201403190133278_pushing_model1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
