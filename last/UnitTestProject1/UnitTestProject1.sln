@@ -1,0 +1,110 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{0F346B5B-B65F-4FFF-875D-4F9B22836B4E}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebForm", "http://localhost:49415", "{C3F3DB9D-DFB3-4E50-85FD-3B278C109682}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{b99a9ca8-e1af-4578-bbbc-7782b0fbbd5c}|GeoCode.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49415"
+		Debug.AspNetCompiler.PhysicalPath = "WebForm\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49415\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49415"
+		Release.AspNetCompiler.PhysicalPath = "WebForm\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49415\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "WebForm\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCode", "GeoCode\GeoCode.csproj", "{B99A9CA8-E1AF-4578-BBBC-7782B0FBBD5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCExample", "MVCExample\MVCExample.csproj", "{6AD6BC4A-B184-4DE2-ADF2-9C141BF57ACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuelEconomyTest", "FuelEconomyTest\FuelEconomyTest.csproj", "{F74B46C9-6012-4828-88BD-7A8E3589E2EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCodeTest", "GeoCodeTest\GeoCodeTest.csproj", "{198E1201-E811-41FE-A808-4179127E5DA7}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GeoCode-Web", "http://localhost:49418", "{6D5B49AB-423D-4A42-93D0-F2F43FFAE7D4}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{53488504-9900-4f72-a45b-d3b5d199b348}|GeoCodeLib.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49418"
+		Debug.AspNetCompiler.PhysicalPath = "GeoCode-Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49418\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49418"
+		Release.AspNetCompiler.PhysicalPath = "GeoCode-Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49418\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "GeoCode-Web\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCodeLib", "GeoCodeLib\GeoCodeLib.csproj", "{53488504-9900-4F72-A45B-D3B5D199B348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\MyBigOlProject\WebApplication1\WebApplication1.csproj", "{15E31F1F-3AE7-46F9-86D3-5A431A9DAE87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F346B5B-B65F-4FFF-875D-4F9B22836B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F346B5B-B65F-4FFF-875D-4F9B22836B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F346B5B-B65F-4FFF-875D-4F9B22836B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F346B5B-B65F-4FFF-875D-4F9B22836B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F3DB9D-DFB3-4E50-85FD-3B278C109682}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F3DB9D-DFB3-4E50-85FD-3B278C109682}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F3DB9D-DFB3-4E50-85FD-3B278C109682}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F3DB9D-DFB3-4E50-85FD-3B278C109682}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B99A9CA8-E1AF-4578-BBBC-7782B0FBBD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99A9CA8-E1AF-4578-BBBC-7782B0FBBD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99A9CA8-E1AF-4578-BBBC-7782B0FBBD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99A9CA8-E1AF-4578-BBBC-7782B0FBBD5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD6BC4A-B184-4DE2-ADF2-9C141BF57ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD6BC4A-B184-4DE2-ADF2-9C141BF57ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD6BC4A-B184-4DE2-ADF2-9C141BF57ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD6BC4A-B184-4DE2-ADF2-9C141BF57ACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74B46C9-6012-4828-88BD-7A8E3589E2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74B46C9-6012-4828-88BD-7A8E3589E2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74B46C9-6012-4828-88BD-7A8E3589E2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74B46C9-6012-4828-88BD-7A8E3589E2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{198E1201-E811-41FE-A808-4179127E5DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{198E1201-E811-41FE-A808-4179127E5DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{198E1201-E811-41FE-A808-4179127E5DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{198E1201-E811-41FE-A808-4179127E5DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5B49AB-423D-4A42-93D0-F2F43FFAE7D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5B49AB-423D-4A42-93D0-F2F43FFAE7D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5B49AB-423D-4A42-93D0-F2F43FFAE7D4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5B49AB-423D-4A42-93D0-F2F43FFAE7D4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{53488504-9900-4F72-A45B-D3B5D199B348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53488504-9900-4F72-A45B-D3B5D199B348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53488504-9900-4F72-A45B-D3B5D199B348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53488504-9900-4F72-A45B-D3B5D199B348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E31F1F-3AE7-46F9-86D3-5A431A9DAE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E31F1F-3AE7-46F9-86D3-5A431A9DAE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E31F1F-3AE7-46F9-86D3-5A431A9DAE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E31F1F-3AE7-46F9-86D3-5A431A9DAE87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

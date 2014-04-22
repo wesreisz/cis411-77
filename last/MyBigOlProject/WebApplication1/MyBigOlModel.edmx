@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MyBigOlTestModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MyBigOlTestModelStoreContainer">
+          <EntitySet Name="Game" EntityType="MyBigOlTestModel.Store.Game" store:Type="Tables" Schema="testreisz" />
+          <EntitySet Name="Vote" EntityType="MyBigOlTestModel.Store.Vote" store:Type="Tables" Schema="testreisz" />
+          <AssociationSet Name="FK_Vote_Game" Association="MyBigOlTestModel.Store.FK_Vote_Game">
+            <End Role="Game" EntitySet="Game" />
+            <End Role="Vote" EntitySet="Vote" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vote_Game1" Association="MyBigOlTestModel.Store.FK_Vote_Game1">
+            <End Role="Game" EntitySet="Game" />
+            <End Role="Vote" EntitySet="Vote" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="gameId" />
+          </Key>
+          <Property Name="gameId" Type="int" Nullable="false" />
+          <Property Name="gameTitle" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="voteId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Vote">
+          <Key>
+            <PropertyRef Name="voteId" />
+          </Key>
+          <Property Name="voteId" Type="int" Nullable="false" />
+          <Property Name="gamePlacementLeft" Type="int" Nullable="false" />
+          <Property Name="gamePlacementRight" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Vote_Game">
+          <End Role="Game" Type="MyBigOlTestModel.Store.Game" Multiplicity="1" />
+          <End Role="Vote" Type="MyBigOlTestModel.Store.Vote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Game">
+              <PropertyRef Name="gameId" />
+            </Principal>
+            <Dependent Role="Vote">
+              <PropertyRef Name="gamePlacementLeft" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vote_Game1">
+          <End Role="Game" Type="MyBigOlTestModel.Store.Game" Multiplicity="1" />
+          <End Role="Vote" Type="MyBigOlTestModel.Store.Vote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Game">
+              <PropertyRef Name="gameId" />
+            </Principal>
+            <Dependent Role="Vote">
+              <PropertyRef Name="gamePlacementRight" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyBigOlTestModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MyBigOlTestEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Games" EntityType="MyBigOlTestModel.Game" />
+          <EntitySet Name="Votes" EntityType="MyBigOlTestModel.Vote" />
+          <AssociationSet Name="FK_Vote_Game" Association="MyBigOlTestModel.FK_Vote_Game">
+            <End Role="Game" EntitySet="Games" />
+            <End Role="Vote" EntitySet="Votes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Vote_Game1" Association="MyBigOlTestModel.FK_Vote_Game1">
+            <End Role="Game" EntitySet="Games" />
+            <End Role="Vote" EntitySet="Votes" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Game">
+          <Key>
+            <PropertyRef Name="gameId" />
+          </Key>
+          <Property Name="gameId" Type="Int32" Nullable="false" />
+          <Property Name="gameTitle" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="voteId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Votes" Relationship="MyBigOlTestModel.FK_Vote_Game" FromRole="Game" ToRole="Vote" />
+          <NavigationProperty Name="Votes1" Relationship="MyBigOlTestModel.FK_Vote_Game1" FromRole="Game" ToRole="Vote" />
+        </EntityType>
+        <EntityType Name="Vote">
+          <Key>
+            <PropertyRef Name="voteId" />
+          </Key>
+          <Property Name="voteId" Type="Int32" Nullable="false" />
+          <Property Name="gamePlacementLeft" Type="Int32" Nullable="false" />
+          <Property Name="gamePlacementRight" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Game" Relationship="MyBigOlTestModel.FK_Vote_Game" FromRole="Vote" ToRole="Game" />
+          <NavigationProperty Name="Game1" Relationship="MyBigOlTestModel.FK_Vote_Game1" FromRole="Vote" ToRole="Game" />
+        </EntityType>
+        <Association Name="FK_Vote_Game">
+          <End Role="Game" Type="MyBigOlTestModel.Game" Multiplicity="1" />
+          <End Role="Vote" Type="MyBigOlTestModel.Vote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Game">
+              <PropertyRef Name="gameId" />
+            </Principal>
+            <Dependent Role="Vote">
+              <PropertyRef Name="gamePlacementLeft" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Vote_Game1">
+          <End Role="Game" Type="MyBigOlTestModel.Game" Multiplicity="1" />
+          <End Role="Vote" Type="MyBigOlTestModel.Vote" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Game">
+              <PropertyRef Name="gameId" />
+            </Principal>
+            <Dependent Role="Vote">
+              <PropertyRef Name="gamePlacementRight" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyBigOlTestModelStoreContainer" CdmEntityContainer="MyBigOlTestEntities">
+          <EntitySetMapping Name="Games">
+            <EntityTypeMapping TypeName="MyBigOlTestModel.Game">
+              <MappingFragment StoreEntitySet="Game">
+                <ScalarProperty Name="gameId" ColumnName="gameId" />
+                <ScalarProperty Name="gameTitle" ColumnName="gameTitle" />
+                <ScalarProperty Name="voteId" ColumnName="voteId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Votes">
+            <EntityTypeMapping TypeName="MyBigOlTestModel.Vote">
+              <MappingFragment StoreEntitySet="Vote">
+                <ScalarProperty Name="voteId" ColumnName="voteId" />
+                <ScalarProperty Name="gamePlacementLeft" ColumnName="gamePlacementLeft" />
+                <ScalarProperty Name="gamePlacementRight" ColumnName="gamePlacementRight" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

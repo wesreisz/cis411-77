@@ -1,0 +1,17 @@
+﻿@model MVCExample.Models.AddressModel
+
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>View</h2>
+@using (Html.BeginForm("GeoCodeAddress","Default"))
+{ 
+    <div>
+        <div>@Html.DisplayNameFor(model =>  Model.InputAddress)</div>
+        <div>@Html.TextBoxFor(Model =>  Model.InputAddress)</div>
+        <div><input type="submit" name="submitbutton" id="submitbutton" value="GeoCode" /></div>
+
+        <div>@Html.DisplayTextFor(model =>  Model.DisplayAddress)</div>
+     </div>
+}
