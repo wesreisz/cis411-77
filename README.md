@@ -5,4 +5,3 @@ as branches.
 
 Syllabus: http://goo.gl/gB6gds  
 Schedule: http://goo.gl/lMKKAn   
-
