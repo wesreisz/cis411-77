@@ -1,0 +1,46 @@
+<html>
+  <head>
+	<style>
+	  body{
+		padding:20px;
+ 	  }
+	</style>
+	<script> 
+		function runPercent(){
+			var input = document.getElementById("txtInput").value;
+			
+			//find occurance of %
+			if(input.indexOf("%")>-1){
+				input = evaluateInlinePercent(input);
+			}
+		
+			var result = eval(input);
+			document.getElementById("txtInput").value=result;
+			console.log("result: " + result);
+		}
+		//method will find the location of a percent, grab the number immediately in
+		//front of it and convert it inline to a percentage. There are issues with this
+		//but it shows an implementation.
+		function evaluateInlinePercent(input){
+			console.log('percent operation');
+			var tmp = "";
+			var percentPosition = input.indexOf('%')-1;
+			for (var i=percentPosition;i>=0;i--){
+				if(isNaN(input[i])){
+					break;
+				}else{
+					console.log(input[i] + ",");
+					tmp += input[i];
+				}
+			}
+			//inline replace. ex: 56% pattern with 56/100
+			tmp = tmp.split('').reverse().join('')
+			console.log("value: " + tmp);
+			return input.replace(tmp+ "%",Number(tmp)/100)
+		}
+	</script>
+  </head>
+  <body>
+     <input type="text" id="txtInput" placeholder="Enter expression"/> <button id="btnInput" onclick="javascript:runPercent();" href="#">Submit Expression</button>
+  </body>	 
+</html>
