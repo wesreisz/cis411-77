@@ -10,18 +10,19 @@
 			var input = document.getElementById("txtInput").value;
 			
 			//find occurance of %
-			if(input.indexOf("%")>-1){
-				input = evaluateInlinePercent(input);
-			}
-		
+			input = evaluateInlinePercent(input);
+			
 			var result = eval(input);
 			document.getElementById("txtInput").value=result;
 			console.log("result: " + result);
 		}
 		//method will find the location of a percent, grab the number immediately in
 		//front of it and convert it inline to a percentage. There are issues with this
-		//but it shows an implementation.
+		//but it shows an implementation. 
 		function evaluateInlinePercent(input){
+			if(input.indexOf("%")===-1){
+				return input;
+			}
 			console.log('percent operation');
 			var tmp = "";
 			var percentPosition = input.indexOf('%')-1;
@@ -34,9 +35,10 @@
 				}
 			}
 			//inline replace. ex: 56% pattern with 56/100
-			tmp = tmp.split('').reverse().join('')
+			tmp = tmp.split('').reverse().join('');
 			console.log("value: " + tmp);
-			return input.replace(tmp+ "%",Number(tmp)/100)
+			tmp = input.replace(tmp+ "%",Number(tmp)/100);
+			return evaluateInlinePercent(tmp)
 		}
 	</script>
   </head>
