@@ -1,0 +1,77 @@
+<html>
+    <script>
+        //alert('Hello');
+        //console.log("Hello");
+        function buildExpresssion(input){
+	 		console.log('Echoing: ' + input);
+	        var results = document.getElementById('txtInput');
+	        results.value = results.value + input;
+        }
+        function clearMyCalculator(){
+			console.log('Clearing Calculator');
+	     	var results = document.getElementById('txtInput');
+	        results.value = "";
+        }
+        function calculate(){
+			var results = document.getElementById('txtInput').value;
+			var calculatedResult = eval(results);
+			console.log(results + " = " + calculatedResult);
+			txtInput.value = calculatedResult;
+        }
+    </script>
+    <style>
+     *{
+	    padding: 2px;
+	    font-family: arial;
+	    font-size: 12pt;
+     }
+     span{
+		float: left;
+		position: relative;
+		top: 10;		
+		width: 60px;
+		height: 60px;	
+		background: #ccc;	
+		margin: 1px 1px 1px 1px;
+		line-height: 40px;
+		text-align: center;
+     }
+     span:hover{
+	    background: #999;
+	    color: white;
+     }
+     h3{
+	    text-align: center;
+     }
+     input{
+	    text-align:right;
+	    height: 60px;
+	    width: 260px;
+     }
+     #calc{
+	    width:300px;
+     }
+    </style>
+    <body>
+	   <section id="calc">
+		   <h3>Calculator</h3>
+		   <input id="txtInput" type="text"><br />
+		   <span onclick="buildExpresssion(1);" id="btnClick">1</span>
+		   <span onclick="buildExpresssion(2);" id="btnClick">2</span>
+		   <span onclick="buildExpresssion(3);" id="btnClick">3</span>
+		   <span onclick="buildExpresssion('*');" id="btnClick">*</span>
+		   <span onclick="buildExpresssion(4);" id="btnClick">4</span>
+		   <span onclick="buildExpresssion(5);" id="btnClick">5</span>
+		   <span onclick="buildExpresssion(6);" id="btnClick">6</span>
+		   <span onclick="buildExpresssion('/');" id="btnClick">/</span>
+		   <span onclick="buildExpresssion(7);" id="btnClick">7</span>
+		   <span onclick="buildExpresssion(8);" id="btnClick">8</span>
+		   <span onclick="buildExpresssion(7);" id="btnClick">9</span>
+		   <span onclick="calculate();" id="btnClick">=</span>
+		   <span onclick="buildExpresssion(8);" id="btnClick">0</span>
+		   <span onclick="buildExpresssion('+');" id="btnClick">+</span>
+		   <span onclick="buildExpresssion('-');" id="btnClick">-</span>
+		   <span onclick="clearMyCalculator();" id="btnClick">C</span>
+	   </section>
+	</body>
+</html>
