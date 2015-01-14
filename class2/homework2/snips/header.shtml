@@ -1,0 +1,11 @@
+<div id="hdr">
+ <img src="/homework2/images/header.png" alt="header image" />
+ <div id="nav">
+ 	<a href="/homework2/index.html">Calculator</a>&nbsp;|&nbsp;
+    <a href="/homework2/calculator.html">New Calculator</a>&nbsp;|&nbsp;
+    <a href="/homework2/feedback.html">Feedback</a>&nbsp;|&nbsp;
+    <a href="/homework2/registration.html">Registration</a>&nbsp;|&nbsp;
+ 	<a href="/homework2/faq.html">FAQ</a>
+ </div>
+</div>
+<fieldset style="width:1000px">
