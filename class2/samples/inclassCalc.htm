@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<script>
+	var calc = {};
+	calc.buildExpression = function(msg){
+		console.log(msg);
+		var display = document.getElementById('txtViewport');
+		display.value += msg;
+	}
+	calc.evaluateExpression = function(){
+		var display = document.getElementById('txtViewport');
+		display.value = eval(display.value);
+	}
+	calc.clearViewport = function(){
+		var display = document.getElementById('txtViewport');
+		display.value = "";
+	}
+	</script>
+	<style>
+	   *{
+		  padding: 10px;
+  	   }
+	   .btn{
+	    
+	     	
+	   }
+	   .calc{
+	     width: 260px;
+	     padding: 10px;	
+	   }
+	   button{
+	     width: 60px;
+	     height: 60px;	
+	   }
+	   #txtViewport{
+	     display: block; 
+	     width: 225px;
+	     margin-bottom: 10px; 
+	     text-align: right;
+	   }
+	</style>
+  </head> 	
+  <body>
+	 <section class="calc">
+	 	 <h3>WAT</h3>
+	     <input type="text" id="txtViewport">
+		 <button class="btn" onclick="calc.buildExpression(1)">1</button>
+		 <button class="btn" onclick="calc.buildExpression(2)">2</button>
+		 <button class="btn" onclick="calc.buildExpression(3)">3</button>
+		 <button class="btn" onclick="calc.buildExpression('+')">+</button>
+		 <button class="btn" onclick="calc.buildExpression(4)">4</button>
+		 <button class="btn" onclick="calc.buildExpression(5)">5</button>
+		 <button class="btn" onclick="calc.buildExpression(6)">6</button>
+	  	 <button class="btn" onclick="calc.buildExpression('+')">-</button>
+		 <button class="btn" onclick="calc.buildExpression(7)">7</button>
+		 <button class="btn" onclick="calc.buildExpression(8)">8</button>
+		 <button class="btn" onclick="calc.buildExpression(9)">9</button>
+		 <button class="btn" onclick="calc.buildExpression('+')">*</button>
+		 <button class="btn" onclick="calc.buildExpression(0)">0</button>
+		 <button class="btn" onclick="calc.buildExpression('/')">/</button> 
+		 <button class="btn" onclick="calc.buildExpression('%')">%</button> 
+	  	 <button class="btn" onclick="calc.evaluateExpression()">=</button>
+	     <button class="btn" onclick="calc.clearViewport()">C</button>  
+	 </section>
+  </body>	
+</html>
