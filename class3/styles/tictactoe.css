@@ -20,3 +20,11 @@ h3{
 	padding: 10px;
 	border: 1px solid blue;
 }
+.x-clicked {
+	background: url(../images/tic-tac-toe-X.png) no-repeat left top;
+    background-position: center;
+}
+.o-clicked {
+	background: url(../images/tic-tac-toe-O.png) no-repeat left top;
+    background-position: center;
+}
