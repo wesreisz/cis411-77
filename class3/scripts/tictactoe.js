@@ -5,11 +5,13 @@ $(document).ready(
 	function(){
 		console.log("loading tictactoe");
 		
-		//use this event handler to change the background of the cell to the X or )
+		//use this event handler to change the background of the cell to the X or O
 		$( ".cell" ).on( "click", function() {
 		   //check to see if already selected	
 		   if($(this).hasClass("o-clicked") || $(this).hasClass("x-clicked")){
-				alert("Please select a different cell, this one has already been selected.");
+				//alert("");
+				$('#msgInfo').text("Please select a different cell, this one has already been selected.");
+				$('#msgInfo').show().delay(1500).fadeOut('slow');
 				return;
 		   }	
 		  

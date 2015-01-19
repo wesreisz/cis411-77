@@ -1,5 +1,6 @@
 body{
 	font-family: 'Yanone Kaffeesatz',sans-serif;
+	margin: 0px;
 }
 #tictactoe{
 	width: 700px;
@@ -27,4 +28,15 @@ h3{
 .o-clicked {
 	background: url(../images/tic-tac-toe-O.png) no-repeat left top;
     background-position: center;
+}
+.msg{
+	display:none;
+	position: absolute;
+	top: 100px;
+	background: red;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
 }
