@@ -1,12 +1,12 @@
 body{
 	font-family: 'Yanone Kaffeesatz',sans-serif;
 	margin: 0px;
+	padding: 10px;
+	text-align: center;
 }
 #tictactoe{
 	width: 700px;
 	margin:0 auto;
-	padding: 10px;
-	text-align: center;
 }
 h3{
 	font-size: 30pt;
@@ -39,4 +39,8 @@ h3{
 	text-align: center;
 	width: 100%;
 	z-index: 100;
+}
+.clear {
+  clear: both;
+  display: block;
 }
