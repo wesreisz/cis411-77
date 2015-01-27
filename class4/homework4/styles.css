@@ -1,0 +1,17 @@
+body{
+	padding: 20px;
+}
+.show-grid{
+	background-color: #CCC;
+	padding: 5px 30px 5px 30px;
+}
+.col:not(:first-child),.col:not(:last-child) {
+  padding-right:7px;
+  padding-left:7px;
+}
+.row{
+  padding-bottom: 30px;	
+}
+.no-box{
+  border: 0px;	
+}
