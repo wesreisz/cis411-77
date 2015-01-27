@@ -7,31 +7,79 @@
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
-    <div class="container">
-		<h3>Contact Form</h3>
-		<form class="form-inline">
-		  <div class="form-group">
-			<div class="input-group input-group-md">
-			  	<span class="text-right form-control no-box">
-				  	<label for="name">Name</label>
-				  </span>	
-			  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>   
-			  <input type="text" class="form-control">
-			</div>
-		  </div>
-		  <div class="form-group">
-			<div class="input-group input-group-md">
-			  	<span class="text-right form-control no-box">
-				  	<label for="email">Email</label>
-				  </span>	
-			  <span class="input-group-addon"><span class="glyphicon glyphicon-mail"></span></span>   
-			  <input type="text" class="form-control">
-			</div>
-		  </div>
-		  <button type="submit" class="btn btn-primary">Submit</button>
-		  <button type="submit" class="btn">Cancel</button>
-		</form>
-	</div>			
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="index.htm">Bootstrap'n</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="index.htm">Index<span class="sr-only">(current)</span></a></li>
+		        <li><a href="page2.htm">Page 2</a></li>
+		        <li class="active"><a href="form.htm">Form</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+  	    <div class="container">
+			<h3>Contact Form</h3>
+			<form class="form-inline">
+			  <div class="input-group has-success">
+		 			<div class="input-group">
+					  	<span class="text-right form-control no-box">
+						  	<label for="name">Name</label>
+						  </span>	
+					  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>   
+					  <input type="text" name="name" id="name" class="form-control"></textarea>
+					  <span class="input-group-addon">OK</span>
+					</div>
+			  </div>
+			  <div class="input-group has-success">
+		 			<div class="input-group">
+					  	<span class="text-right form-control no-box">
+						  	<label for="email">Email</label>
+						  </span>	
+					  <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>   
+					  <input type="text" name="email" id="email" class="form-control"></textarea>
+					  <span class="input-group-addon">OK</span>
+					</div>
+			  </div>
+			  <div class="input-group has-error">
+		 			<div class="input-group">
+					  	<span class="text-right form-control no-box">
+						  	<label for="comment">Url</label>
+						  </span>	
+					  <span class="input-group-addon"><span class="glyphicon glyphicon-globe"></span></span>   
+					  <input type="text" name="comment" id="comment" class="form-control"></textarea>
+					  <span class="input-group-addon">BAD</span>
+					</div>
+			  </div>
+			  <div class="input-group has-success">
+		 			<div class="input-group">
+					  	<span class="text-right form-control no-box">
+						  	<label for="comment">Comment</label>
+						  </span>	
+					  <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>   
+					  <textarea name="comment" id="comment" class="form-control"></textarea>
+					  <span class="input-group-addon">OK</span>
+					</div>
+			  </div>
+			  <div id="buttons">
+			  	  <button type="submit" class="btn btn-primary">Submit</button>
+				  <button type="submit" class="btn">Cancel</button>
+			  </div>
+			</form>
+		</div>			
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
