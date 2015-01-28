@@ -1,0 +1,15 @@
+#page-module .column1 {
+  float: left;
+  width: 100px;
+  background-color: #223322;
+}
+#page-module .column2 {
+  float: left;
+  width: 100px;
+  background-color: #334433;
+}
+#page-module .column3 {
+  float: left;
+  width: 100px;
+  background-color: #223322;
+}
