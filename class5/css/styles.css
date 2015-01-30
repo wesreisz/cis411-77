@@ -1,0 +1,22 @@
+.col:not(:first-child),.col:not(:last-child) {
+  padding-right:7px;
+  padding-left:7px;
+}
+.row{
+  padding-bottom: 30px;	
+}
+.no-box{
+  border: 0px;	
+}
+.form-inline label{
+	width:60px;
+	left:;
+}
+#buttons{
+	position: relative;
+	left: 165px;
+	top: 10px;
+}
+input,textarea{
+	width:500px !important;
+}
