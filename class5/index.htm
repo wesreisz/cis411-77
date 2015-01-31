@@ -1,19 +1,50 @@
 <!DOCTYPE html>
-<html ng-app="store">
-   <head>
-	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-   </head>
-   <body ng-controller="StoreController as store">
-	  <div ng-repeat="product in store.products">	
-	  	<div ng-hide="product.soldOut">
-		 	 <h1>{{product.name}}</h1>
-			 <h2>{{product.price}}</h2>
-			 <p>{{product.description}}</p>
-		 	 <button ng-show="product.canPurchase">Add to Cart</button>
-		   </div>
-		</div>
-	 
-	  <script type="text/javascript" src="js/angular.min.js"></script>
-	  <script type="text/javascript" src="js/app.js"></script>
-   </body>	 
+<html ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </head>
+  <body class="list-group" ng-controller="StoreController as store">
+	
+    <!--  Product Container  -->
+    <div class="list-group-item" ng-repeat="product in store.products">
+      <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+      <!-- Image Gallery  -->
+      <div class="gallery">
+        <div class="img-wrap">
+          <img ng-src="http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/{{product.images[0]}}" />
+        </div>
+        <ul class="img-thumbnails clearfix">
+          <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+            <img ng-src="http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/{{image}}" />
+          </li>
+        </ul>
+
+		<section class="tab" ng-controller="TabController as tab">
+	        <ul class="nav nav-pills">
+	          <li ng-class="{active:tab.isSet(1)}">
+	            <a href ng-click="tab.setTab(1)">Description</a></li>
+	          <li ng-class="{active:tab.isSet(2)}">
+	            <a href ng-click="tab.setTab(2)">Specs</a></li>
+	          <li ng-class="{active:tab.isSet(3)}">
+	            <a href ng-click="tab.setTab(3)">Reviews</a></li>
+	        </ul>
+	        <div ng-show="tab.isSet(1)">
+	          <h4>Description</h4>
+	          <blockquote>{{product.description}}</blockquote>
+	        </div>
+	        <div ng-show="tab.isSet(2)">
+	          <h4>Specs</h4>
+	          <blockquote>Shine: {{product.shine}}</blockquote>
+	        </div>
+	        <div ng-show="tab.isSet(3)">
+	          <h4>Reviews</h4>
+	          <blockquote></blockquote>
+	        </div>
+	      </section>
+    </div>
+  </body>
 </html>
