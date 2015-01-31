@@ -15,11 +15,11 @@
       <!-- Image Gallery  -->
       <div class="gallery">
         <div class="img-wrap">
-          <img ng-src="http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/{{product.images[0]}}" />
+          <img ng-src="{{product.images[0]}}" />
         </div>
         <ul class="img-thumbnails clearfix">
           <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-            <img ng-src="http://dhg7upb7j7jqa.cloudfront.net/shaping_up_with_angular_js/assets/demo/{{image}}" />
+            <img ng-src="{{image}}" />
           </li>
         </ul>
 
