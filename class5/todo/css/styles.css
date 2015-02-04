@@ -4,3 +4,17 @@ body{
 .todo{
 	width: 400px;
 }
+
+#todo-list li.editing {
+	border-bottom: 1px solid #778899;
+}
+
+#todo-list li.editing .view {
+	display: none;
+}
+#todo-list li.editing .edit {
+	display: block;
+	width: 444px;
+	padding: 13px 15px 14px 20px;
+	margin: 0;
+}
