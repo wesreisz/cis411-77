@@ -1,0 +1,19 @@
+body{
+	padding: 20px 50px 20px 50px;
+}
+.container{
+	width: 500px;
+	border: 1px solid black;
+}
+tr:nth-child(odd) { 
+	background-color:#eee; 
+}
+tr:nth-child(even) { 
+	background-color:#fff; 
+}
+
+@media (max-width: 550px) {
+  	.container{
+		width: 250px;
+	}
+}
