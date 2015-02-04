@@ -5,4 +5,11 @@ body{
 	width: 500px;
 	border: 1px solid black;
 }
+tr:nth-child(odd) { 
+	background-color:#eee; 
+}
+tr:nth-child(even) { 
+	background-color:#fff; 
+}
+
 
