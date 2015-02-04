@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="store">
+<html ng-app="todo">
    <head>
 	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    </head>
@@ -7,7 +7,12 @@
 	  <script type="text/javascript" src="js/angular.min.js"></script>
 	  <script type="text/javascript" src="js/app.js"></script>
 	
-      <p>{{"hello" + " world"}}</p
-	  <p>{{5+6}}</p>
+	  <div id="container" ng-controller="TodoController as todo" class="text-center">
+		<header>
+			<h3>{{todo.title}}</h3>
+		</header>
+		
+	  </div>	
+      
    </body>	 
 </html>
