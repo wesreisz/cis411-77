@@ -19,7 +19,10 @@
 						placeholder="What needs to be done?"
 						size="30"
 						></input>
-					<button id="btnAdd" class="form-control">Add Task</button>
+					<button id="btnAdd" 
+						class="form-control"
+						ng-click="todo.addTodo(todo.todoText)"
+						>Add Task</button>
 				</div>		
 			</form>
 			{{todo.todoText}}	
