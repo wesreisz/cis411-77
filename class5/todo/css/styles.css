@@ -1,20 +1,8 @@
 body{
-	padding: 50px;
+	padding: 20px 50px 20px 50px;
 }
-.todo{
-	width: 400px;
-}
-
-#todo-list li.editing {
-	border-bottom: 1px solid #778899;
+.container{
+	width: 500px;
+	border: 1px solid black;
 }
 
-#todo-list li.editing .view {
-	display: none;
-}
-#todo-list li.editing .edit {
-	display: block;
-	width: 444px;
-	padding: 13px 15px 14px 20px;
-	margin: 0;
-}
