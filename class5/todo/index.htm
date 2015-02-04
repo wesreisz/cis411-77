@@ -7,11 +7,23 @@
 	  <script type="text/javascript" src="js/angular.min.js"></script>
 	  <script type="text/javascript" src="js/app.js"></script>
 	
-	  <div id="container" ng-controller="TodoController as todo" class="text-center">
-		<header>
+	  <div class="container" ng-controller="TodoController as todo" class="text-center todo">
+		<header class="todo">
 			<h3>{{todo.title}}</h3>
 		</header>
-		
+		<section class="todo">
+			<form class="form-inline" role="form">
+				<div class="form-group">
+					<input type="text" 
+						class="form-control" ng-model="todo.todoText" 
+						placeholder="What needs to be done?"
+						size="30"
+						></input>
+					<button id="btnAdd" class="form-control">Add Task</button>
+				</div>		
+			</form>
+			{{todo.todoText}}	
+		</section>	
 	  </div>	
       
    </body>	 
