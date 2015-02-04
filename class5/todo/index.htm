@@ -26,6 +26,11 @@
 				</div>		
 			</form>
 			{{todo.todoText}}	
+			<ul id="todo-list" class="unstyled">
+				<li ng-repeat="todo in todo.todos">
+					{{todo}}
+				</li>
+			</ul>	
 		</section>	
 	  </div>	
       
