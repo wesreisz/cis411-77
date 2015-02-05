@@ -13,11 +13,19 @@
 		 <form class="form-inline" role="form">
 		  <div class="form-group">
 			<label for="textInput" class="sr-only">Todo</label>
-		    <input type="textInput" class="form-control" id="textInput" ng-model="todoController.textInput">
-		    <button type="submit" class="btn btn-default">Submit</button>
+		    <input type="textInput" 
+				class="form-control" 
+				id="textInput" 
+				ng-model="todoController.textInput">
+		    <button type="submit" 
+				class="btn btn-default" 
+				ng-click="todoController.addItem(todoController.textInput)">Submit</button>
 		  </div>
 		 </form>
          {{todoController.textInput}}
+         <ul class="text-left unstyled">
+	         <li ng-repeat="todo in todoController.todos">{{todo}}</li>
+         </ul>
 	  </div>
    </body>	 
 </html>
