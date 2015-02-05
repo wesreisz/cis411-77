@@ -24,9 +24,13 @@
 		 </form>
          {{todoController.textInput}}
          <ul class="text-left unstyled">
-	         <li ng-repeat="todo in todoController.todos"  ng-dblclick="todoController.toggleControls()">
+	         <li ng-repeat="todo in todoController.todos"  
+				ng-dblclick="todoController.toggleControls()">
 		        <span>{{todo}}</span>
-		        <span ng-show="todoController.isControlsShown">[<a href>Edit</a>] | [<a href>Del</a>] </span>
+		        <span ng-show="todoController.isControlsShown">
+					[<a href>Edit</a>] | 
+					[<a href>Del</a>] 
+				</span>
 		     </li>
          </ul>
 	  </div>
