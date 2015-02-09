@@ -1,0 +1,83 @@
+*{
+ font-size: 20px;	
+}
+.message{
+  font-size: 30px;
+}
+h3{
+  width:100%;	
+}
+.center{
+  font-size: 50px;	
+  text-align:center;
+}
+.container{
+  width: 700px;	 
+}
+.card{
+  width: 165px;
+  height: 200px;
+  display: inline;
+  float: left;
+  
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -ms-transition: -ms-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -ms-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  float:left;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card .back {
+  background: blue;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -ms-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+.message {
+  clear:both;
+  text-align: center;
+  display:block;
+}
+
+
+@media screen and (max-width: 690px) {
+	h3, .message{
+	  font-size: 20px;	
+	}
+	.container{
+	  width: 400px;	
+	}
+	.card {
+	  width: 90px;
+	  height: 75px;
+	}
+	.card .front {
+	  width: 90px;
+	  height: 75px;
+	}
+}

@@ -1,0 +1,14 @@
+<div class="container">
+	<h3 class="center">{{title}}</h3>
+	<div class="stats center">
+		<span>Pairs left to match: {{game.unmatchedPairs}}</span> 
+		<span>Turns Taken: {{game.turn}}</span>
+	</div>
+	<div ng-repeat="tile in game.tileDeck" ng-click="game.flipTile(tile)">
+	      	<div class="card" ng-class="{flipped: tile.flipped}">
+	            <img class="front" ng-src="img/back.png">
+	            <img class="back" ng-src="img/{{tile.tileTitle}}.png">
+	          </div>	
+	</div>
+	<div class="message">{{game.message}}</div>
+</div>	
