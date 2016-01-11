@@ -1,0 +1,48 @@
+body{
+	padding: 30px;
+	background-color: grey;
+	text-align: center;
+	font-family: arial;
+}
+.calculator{
+	background-color: #CCC;
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 22px;
+	min-width: 700px;
+
+}
+.calculator-display{
+	border: 1px solid black;
+	display: inline-block;
+	height: 80px;
+	width: 74%;
+	background-color: white;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 45px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.btn{
+	width: 24%;
+	display: inline-block;
+	margin-bottom: 5px;
+	height: 50px;
+	padding-top: 30px;
+	border: 1px solid black;
+	background-color: #999;
+}
+.2-btn{
+	width: 48%;
+}
+.3-btn{
+	width: 73%;
+}
+.btn:hover{
+	background-color: #2F4F4F;
+	color: white;
+}
+.total{
+	color: #2F4F4F;
+}
