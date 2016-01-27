@@ -1,0 +1,60 @@
+body{
+	font-family: arial narrow;
+	background-image: url('img/bck.jpg');
+	background-repeat: no-repeat;
+}
+p{
+	text-indent: 40px;
+	background-repeat: no-repeat;
+}
+a {
+	text-decoration: none
+}
+.page-wrapper{
+	position:relative;
+	background-image: url('img/bck2.jpg');
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	text-align: justify;
+	left: 140px;
+}
+.page-wrapper h3{
+	background-image: url('img/piuma.gif');
+	background-repeat:no-repeat;  
+	text-indent: 40px;
+	color: #663300;
+}
+section.intro header{
+	background-image:url('img/title2.jpg');   
+	background-repeat:no-repeat;   
+	height:100px;
+	position: relative;
+	left: 90px;
+}
+section.intro header h1, section.intro header h2{
+	display: none;
+}
+.intro{
+	width: 400px;
+	left: 140px;
+}
+.main{
+	width: 400px;
+	left: 140px;
+}
+.sidebar{
+	float: left;
+	width: 150px;
+	position: absolute;
+	top: 80px;
+	left: 450px;
+	text-align: right;
+	font-size: smaller;
+}
+.sidebar ul{
+	list-style-type: none;
+}
+.extra1{
+	background-image: url('img/title2.jpg');
+	background-repeat: no-repeat;
+}
