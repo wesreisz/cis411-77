@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="a1a72eee-aca9-4bc7-b0d5-a985a6c4c353" name="UMLClassDiagram1" linkedPackageId="2c396e91-2e34-417a-adcd-50075bd88a0e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="27dbd699-c041-43a1-acb5-9e706ad75377">
+      <profileInstance Id="c95b220f-a717-4ec5-bad8-635d68368eb3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bb604697-82a9-4428-ab00-4a5ed666004b">
+      <profileInstance Id="f2b81210-1535-4df3-9817-b54b88232d44" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee8fc3d3-59bb-4419-b14c-89f2f8812aed" name="Animal" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26f4e527-0a08-4aad-8bec-0aa5532e77bd" />
+        <ownedAttributesInternal>
+          <property Id="fdf1926a-0c3e-4aa6-af65-955b0a174006" name="count : int" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2c837d9a-c937-4560-94e6-b9a4ea2a4910" />
+          </property>
+          <property Id="381b2869-b984-4dfb-9080-9fd86853c35b" name="Name : String" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90564dc3-3fb0-40ab-9675-941055372d51" />
+          </property>
+          <property Id="e9717bc5-ca02-4527-92fc-7cb56847fcc9" name="itemNumber : String" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5abb5823-481d-4130-8f65-2c1b6ebaae94" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="01cab043-7d4a-449b-aab0-dc921be4e25d" name="Dog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9e0fb5a6-677c-418e-af18-e8f7a7c68f12" />
+        <generalsInternal>
+          <generalization Id="98267ae0-0394-411d-b1ff-47dc2f9a55fb" isSubstitutable="false">
+            <classMoniker Id="ee8fc3d3-59bb-4419-b14c-89f2f8812aed" LastKnownName="Animal" />
+            <elementDefinition Id="16756624-418e-49bd-9c7d-8889a8cd3a00" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="f474dcae-8228-4103-8a31-9d710f4c126d" isDerived="false" sourceEndRoleName="Dog" targetEndRoleName="IBone" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f5099bed-7eda-4772-82c8-5339d33ae4ff" LastKnownName="IBone" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49432728-2364-4f6a-be55-3b69d7cf6399" name="Dog" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="519f5b62-4859-4cde-a115-92a56ededc68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="04038d7a-0882-44bd-832a-de2ba2476e6f" name="IBone" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="9c100c22-9f7f-473d-a4fd-ff3d76880ce3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b09fbbea-b4b2-4c96-87f8-35e7a878033c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f72da5d6-b3a8-4184-bc49-e3776c12f511" name="MyBone" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b8eaa01-8207-4e44-b32b-c9e677e44b74" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a1ba6524-e1bf-4945-97fa-ed0cd05b0189" LastKnownName="IBone" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f5099bed-7eda-4772-82c8-5339d33ae4ff" name="IBone" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="088efa64-9703-4098-86ad-fe2ff0e161de" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6449265b-56ff-4864-93da-d73c0f7114a8" name="MilkBone" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ce9b32f0-3a48-41d6-b4f0-42aac5323349" />
+        <generalsInternal>
+          <generalization Id="21928eaa-4519-454a-a54e-2e34305c31e5" isSubstitutable="false">
+            <classMoniker Id="f5099bed-7eda-4772-82c8-5339d33ae4ff" LastKnownName="IBone" />
+            <elementDefinition Id="6d12a91d-e70c-4a0f-8773-73982605e04e" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b15a8823-7cb0-4122-8e06-2db245741658" name="PeanutButterBone" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4a405ac3-9bb1-4bc9-985a-8fe63025a898" />
+        <generalsInternal>
+          <generalization Id="4ea68f9e-b159-4d3d-883f-4310cc8932d6" isSubstitutable="false">
+            <classMoniker Id="f5099bed-7eda-4772-82c8-5339d33ae4ff" LastKnownName="IBone" />
+            <elementDefinition Id="4a51b935-9c08-4db2-93b3-e9ca6ccf5f39" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="305a153d-bfc0-4518-a2fe-444e94988ba5" name="AnimalProgram" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="add69acf-f045-4fd0-92fa-bf71852a6411" />
+        <suppliersInternal>
+          <dependency Id="9917f550-01f0-43f9-93e2-8b578354f1aa">
+            <classMoniker Id="ee8fc3d3-59bb-4419-b14c-89f2f8812aed" LastKnownName="Animal" />
+            <elementDefinition Id="8816ad58-466b-4152-9fc0-701824c83938" />
+          </dependency>
+          <dependency Id="f8102ba0-4f75-4e1b-9a58-f75a87b8ddc4">
+            <classMoniker Id="01cab043-7d4a-449b-aab0-dc921be4e25d" LastKnownName="Dog" />
+            <elementDefinition Id="f0023eb6-2353-4918-9731-1887bca51a9b" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="d1ad15e5-c57e-4cdf-800b-bdf189a51d85" name="Main" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="455f5850-80fb-43d3-b4d5-4e84b0716c21" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="599485f6-23ec-4aa3-ab9c-78957856084b" name="String[]" direction="In" isUnique="false">
+                  <elementDefinition Id="a1e1ec5f-fe26-4301-8fe8-221fb85ee28b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e2b0c710-e2a8-4062-847b-98126580d6c7" direction="Return" isUnique="false">
+                  <elementDefinition Id="9ca9c0c0-2a2e-42a0-b9bf-2090f8951062" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c359ffea-9a09-41be-814b-2a92cbc41222" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="a1ba6524-e1bf-4945-97fa-ed0cd05b0189" name="IBone" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IBone">
+        <elementDefinition Id="088efa64-9703-4098-86ad-fe2ff0e161de" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c359ffea-9a09-41be-814b-2a92cbc41222" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="c5defccd-b44f-4387-91bf-0e1f986e7986" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="2c396e91-2e34-417a-adcd-50075bd88a0e" name="ModelingProject1">
+    <elementDefinition Id="b6fd563c-09b6-45e7-9eae-a166425ec488" />
+  </package>
+</logicalClassDesignerModel>
