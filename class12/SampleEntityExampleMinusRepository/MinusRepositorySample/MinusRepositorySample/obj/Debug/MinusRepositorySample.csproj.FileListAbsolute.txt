@@ -1,0 +1,10 @@
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\MinusRepositorySample.exe.config
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\MinusRepositorySample.exe
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\MinusRepositorySample.pdb
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\EntityFramework.dll
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\EntityFramework.xml
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\obj\Debug\MinusRepositorySample.csprojResolveAssemblyReference.cache
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\obj\Debug\MinusRepositorySample.exe
+C:\Users\wes\workspaces\cis411-77\class12\SampleEntityExampleMinusRepository\MinusRepositorySample\MinusRepositorySample\obj\Debug\MinusRepositorySample.pdb
