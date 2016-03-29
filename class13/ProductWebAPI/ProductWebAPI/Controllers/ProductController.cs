@@ -1,4 +1,5 @@
 ﻿using ProductWebAPI.Models;
+using ProductWebAPI.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,14 @@ namespace ProductWebAPI.Controllers
     public class ProductController : ApiController
     {
         public IEnumerable<Product> GetAllProducts() {
-            return new ProductService().getAllProducts();
+            IProductService service = new ProductService();
+            return service.getAllProducts();
         }
 
         public IHttpActionResult GetProduct(int id) {
-            var product = new ProductService().getProductById(id);
+            IProductService service = new ProductService();
+            var product = service.getProductById(id);
+
             if (product == null) {
                 return NotFound();
             }

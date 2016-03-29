@@ -43,3 +43,8 @@ C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\System
 C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\Antlr3.Runtime.pdb
 C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\obj\Debug\ProductWebAPI.dll
 C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\obj\Debug\ProductWebAPI.pdb
+C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\EntityFramework.dll
+C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\EntityFramework.SqlServer.dll
+C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\EntityFramework.xml
+C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\bin\EntityFramework.SqlServer.xml
+C:\Users\wes\workspaces\cis411-77\class13\ProductWebAPI\ProductWebAPI\obj\Debug\ProductWebAPI.csprojResolveAssemblyReference.cache

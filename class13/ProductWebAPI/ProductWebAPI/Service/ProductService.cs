@@ -1,26 +1,42 @@
-﻿using ProductWebAPI.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ProductWebAPI.Models;
+using ProductWebAPI.DAL;
 
-namespace ProductWebAPI
+namespace ProductWebAPI.Service
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
-        Product[] products = new Product[] {
-            new Product() { Id=1, Name="Tomato Soup", Category="Groceries",Price=1.00M},
-            new Product() { Id=2, Name="Yo-yo", Category="Toys",Price=3.75M},
-            new Product() { Id=3, Name="Hammer", Category="Hammer",Price=16.99M}
-        };
+        public IEnumerable<Product> getAllProducts()
+        {
+            List<Product> products = new List<Product>();
+            using (var repo = new SampleModel()) {
+                foreach (var petsDomainModel in repo.Pets) {
+                    Product p = new Product();
+                    p.Id = (int)petsDomainModel.PetID;
+                    p.Name = petsDomainModel.PetName + " (" + petsDomainModel.PetDescription +")";
+                    p.Price = petsDomainModel.PetPrice;
+                    p.Category = petsDomainModel.AnimalType.AnimalName;
+                    products.Add(p);
+                }
+            }
 
-        public IEnumerable<Product> getAllProducts() {
             return products;
         }
+        
         public Product getProductById(int id)
         {
-            var product = products.FirstOrDefault((p) => p.Id == id);
-            return product;
+            Product result = null;
+            IEnumerable < Product > products = getAllProducts();
+            foreach (Product p in products) {
+                if (p.Id == id)
+                {
+                    result = p;
+                }
+            }
+            return result;
         }
     }
 }
